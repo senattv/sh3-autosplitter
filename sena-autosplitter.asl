@@ -23,7 +23,10 @@ split
 	  !(old.roomID == 150 && current.roomID == 151) && // Heather's apartment to missionary
 	  !(old.roomID == 150 && current.roomID == 152) && // From living room to Harrys' bedroom
 	  !(old.roomID == 154 && current.roomID == 155) && // Outside of apartment to Douglas's car
-	  !(old.roomID == 155 && current.roomID == 156) // Douglas's car to motel room
+	  !(old.roomID == 155 && current.roomID == 156) && // Douglas's car to motel room
+	  !(old.roomID == 159 && current.roomID == 156) && // Hospital to Claudia+Vincent cutscene
+	  !(old.roomID == 157 && current.roomID == 156) && // Heather and Vincent cutscene at the motel
+	  !(old.roomID == 227 && current.roomID == 216) // Douglas talking to Claudia to haunted mansion
 	);
 }
 
