@@ -30,13 +30,13 @@ split
 
 start
 {
-	return old.roomID == 0 && current.roomID != 0;
+	return (old.roomID == 0 && current.roomID != 0);
 }
  
 
 reset
 {
-	return current.HP == 0 && current.roomID == 0;
+	return (old.roomID != 0 && current.roomID == 0);
 }
 
 gameTime
