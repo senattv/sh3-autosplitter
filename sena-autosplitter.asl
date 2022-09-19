@@ -1,9 +1,7 @@
 state("sh3") 
 {
-	float GameTimer: "sh3.exe", 0x6CE66F4;
+    float GameTimer: "sh3.exe", 0x6CE66F4;
     uint roomID: "sh3.exe", 0x32D2C0;
-	float HP: "sh3.exe", 0x498660;
-	uint prevRoom: "sh3.exe", 0x6D1A7D4;	
 }
 
 split
