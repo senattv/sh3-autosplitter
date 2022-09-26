@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout version="1.6.1">
   <Mode>Vertical</Mode>
-  <X>84</X>
-  <Y>101</Y>
+  <X>-405</X>
+  <Y>19</Y>
   <VerticalWidth>373</VerticalWidth>
-  <VerticalHeight>776</VerticalHeight>
+  <VerticalHeight>858</VerticalHeight>
   <HorizontalWidth>-1</HorizontalWidth>
   <HorizontalHeight>-1</HorizontalHeight>
   <Settings>
@@ -68,8 +68,8 @@
         <Version>1.6</Version>
         <CurrentSplitTopColor>FF3373F4</CurrentSplitTopColor>
         <CurrentSplitBottomColor>FF153574</CurrentSplitBottomColor>
-        <VisualSplitCount>8</VisualSplitCount>
-        <SplitPreviewCount>4</SplitPreviewCount>
+        <VisualSplitCount>10</VisualSplitCount>
+        <SplitPreviewCount>5</SplitPreviewCount>
         <DisplayIcons>False</DisplayIcons>
         <ShowThinSeparators>False</ShowThinSeparators>
         <AlwaysShowLastSplit>True</AlwaysShowLastSplit>
@@ -146,12 +146,12 @@
       <Settings>
         <Version>1.0</Version>
         <TextLabel>Heather HP</TextLabel>
-        <TextColor>FFFFFFFF</TextColor>
+        <TextColor>FF4FF88B</TextColor>
         <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFFFFFFF</ValueColor>
-        <OverrideValueColor>False</OverrideValueColor>
+        <ValueColor>FF4FF88B</ValueColor>
+        <OverrideValueColor>True</OverrideValueColor>
         <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>HP</ValueSource>
+        <ValueSource>Heather_HP</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
         <BackgroundColor2>00FFFFFF</BackgroundColor2>
         <BackgroundGradient>Plain</BackgroundGradient>
@@ -176,8 +176,8 @@
         <TextLabel>Items</TextLabel>
         <TextColor>FFFFFFFF</TextColor>
         <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFFFFFFF</ValueColor>
-        <OverrideValueColor>False</OverrideValueColor>
+        <ValueColor>FFD4CD2E</ValueColor>
+        <OverrideValueColor>True</OverrideValueColor>
         <ValueLocation>CurrentState</ValueLocation>
         <ValueSource>items</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
@@ -193,8 +193,8 @@
         <TextLabel>Shooting kills</TextLabel>
         <TextColor>FFFFFFFF</TextColor>
         <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFFFFFFF</ValueColor>
-        <OverrideValueColor>False</OverrideValueColor>
+        <ValueColor>FF808080</ValueColor>
+        <OverrideValueColor>True</OverrideValueColor>
         <ValueLocation>CurrentState</ValueLocation>
         <ValueSource>shootingKills</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
@@ -210,8 +210,8 @@
         <TextLabel>Fighting kills</TextLabel>
         <TextColor>FFFFFFFF</TextColor>
         <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFFFFFFF</ValueColor>
-        <OverrideValueColor>False</OverrideValueColor>
+        <ValueColor>FF4A4AFF</ValueColor>
+        <OverrideValueColor>True</OverrideValueColor>
         <ValueLocation>CurrentState</ValueLocation>
         <ValueSource>fightingKills</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
@@ -227,8 +227,8 @@
         <TextLabel>Damage</TextLabel>
         <TextColor>FFFFFFFF</TextColor>
         <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFFFFFFF</ValueColor>
-        <OverrideValueColor>False</OverrideValueColor>
+        <ValueColor>FFAF4646</ValueColor>
+        <OverrideValueColor>True</OverrideValueColor>
         <ValueLocation>CurrentState</ValueLocation>
         <ValueSource>damage</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
@@ -255,10 +255,10 @@
         <TextLabel>Split Worm HP</TextLabel>
         <TextColor>FFFFFFFF</TextColor>
         <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFFFFFFF</ValueColor>
-        <OverrideValueColor>False</OverrideValueColor>
+        <ValueColor>FF9F71FC</ValueColor>
+        <OverrideValueColor>True</OverrideValueColor>
         <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>wormHP</ValueSource>
+        <ValueSource>Worm_HP</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
         <BackgroundColor2>00FFFFFF</BackgroundColor2>
         <BackgroundGradient>Plain</BackgroundGradient>
@@ -272,10 +272,10 @@
         <TextLabel>Missionary HP</TextLabel>
         <TextColor>FFFFFFFF</TextColor>
         <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFFFFFFF</ValueColor>
-        <OverrideValueColor>False</OverrideValueColor>
+        <ValueColor>FFCFA850</ValueColor>
+        <OverrideValueColor>True</OverrideValueColor>
         <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>missionaryHP</ValueSource>
+        <ValueSource>Missionary_HP</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
         <BackgroundColor2>00FFFFFF</BackgroundColor2>
         <BackgroundGradient>Plain</BackgroundGradient>
@@ -289,10 +289,10 @@
         <TextLabel>Lenny HP</TextLabel>
         <TextColor>FFFFFFFF</TextColor>
         <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFFFFFFF</ValueColor>
-        <OverrideValueColor>False</OverrideValueColor>
+        <ValueColor>FFE37D7D</ValueColor>
+        <OverrideValueColor>True</OverrideValueColor>
         <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>lennyHP</ValueSource>
+        <ValueSource>Lenny_HP</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
         <BackgroundColor2>00FFFFFF</BackgroundColor2>
         <BackgroundGradient>Plain</BackgroundGradient>
@@ -303,13 +303,30 @@
       <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
       <Settings>
         <Version>1.0</Version>
-        <TextLabel>Alessa/God HP</TextLabel>
+        <TextLabel>Alessa HP</TextLabel>
         <TextColor>FFFFFFFF</TextColor>
         <OverrideTextColor>False</OverrideTextColor>
+        <ValueColor>FFFA2CFF</ValueColor>
+        <OverrideValueColor>True</OverrideValueColor>
+        <ValueLocation>CurrentState</ValueLocation>
+        <ValueSource>Alessa_HP</ValueSource>
+        <BackgroundColor>00FFFFFF</BackgroundColor>
+        <BackgroundColor2>00FFFFFF</BackgroundColor2>
+        <BackgroundGradient>Plain</BackgroundGradient>
+        <Display2Rows>False</Display2Rows>
+      </Settings>
+    </Component>
+    <Component>
+      <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
+      <Settings>
+        <Version>1.0</Version>
+        <TextLabel>God HP</TextLabel>
+        <TextColor>FFFFFFFF</TextColor>
+        <OverrideTextColor>True</OverrideTextColor>
         <ValueColor>FFFFFFFF</ValueColor>
         <OverrideValueColor>False</OverrideValueColor>
         <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>godHP</ValueSource>
+        <ValueSource>God_HP</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
         <BackgroundColor2>00FFFFFF</BackgroundColor2>
         <BackgroundGradient>Plain</BackgroundGradient>

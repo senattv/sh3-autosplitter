@@ -1,13 +1,21 @@
 state("sh3") {
     float GameTimer: "sh3.exe", 0x6CE66F4;
     uint roomID: "sh3.exe", 0x32D2C0;
+
+	float Heather_HP: "sh3.exe", 0x498660;
 	
-	// boss HP on livesplit
-	float HP: "sh3.exe", 0x498660;
-	float wormHP : "sh3.exe", 0x49DB98;
-	float missionaryHP: "sh3.exe", 0x498C48;
-	float lennyHP: "sh3.exe", 0x49A0D8;
-	float godHP: "sh3.exe", 0x498958;
+	// boss HP on the first segment of a run
+	float Worm_HP: "sh3.exe", 0x49E178;
+	float Missionary_HP: "sh3.exe", 0x49D8A8;
+	float Lenny_HP: "sh3.exe", 0x49A3C8;
+	float Alessa_HP: "sh3.exe", 0x498958;
+	float God_HP: "sh3.exe", 0x499DE8;
+
+	// boss HP when you press "continue"
+	//float Worm_HP_NGPlus : "sh3.exe", 0x49DB98;
+	//float Missionary_HP_NGPlus: "sh3.exe", 0x498C48;
+	//float Lenny_HP_NGPlus: "sh3.exe", 0x49A0D8;
+	//float God_HP_NGPlus: "sh3.exe", 0x498958;
 	
 	// stats for 10 stars
 	byte items: "sh3.exe", 0x6CE66E8;
