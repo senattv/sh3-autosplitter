@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout version="1.6.1">
   <Mode>Vertical</Mode>
-  <X>-405</X>
-  <Y>19</Y>
+  <X>1424</X>
+  <Y>82</Y>
   <VerticalWidth>373</VerticalWidth>
-  <VerticalHeight>858</VerticalHeight>
+  <VerticalHeight>755</VerticalHeight>
   <HorizontalWidth>-1</HorizontalWidth>
   <HorizontalHeight>-1</HorizontalHeight>
   <Settings>
@@ -126,7 +126,7 @@
         <BackgroundColor2>FF222222</BackgroundColor2>
         <BackgroundGradient>Plain</BackgroundGradient>
         <CenterTimer>False</CenterTimer>
-        <TimingMethod>Current Timing Method</TimingMethod>
+        <TimingMethod>Game Time</TimingMethod>
         <DecimalsSize>35</DecimalsSize>
       </Settings>
     </Component>
@@ -152,6 +152,23 @@
         <OverrideValueColor>True</OverrideValueColor>
         <ValueLocation>CurrentState</ValueLocation>
         <ValueSource>Heather_HP</ValueSource>
+        <BackgroundColor>00FFFFFF</BackgroundColor>
+        <BackgroundColor2>00FFFFFF</BackgroundColor2>
+        <BackgroundGradient>Plain</BackgroundGradient>
+        <Display2Rows>False</Display2Rows>
+      </Settings>
+    </Component>
+    <Component>
+      <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
+      <Settings>
+        <Version>1.0</Version>
+        <TextLabel>Damage</TextLabel>
+        <TextColor>FFFFFFFF</TextColor>
+        <OverrideTextColor>False</OverrideTextColor>
+        <ValueColor>FFAF4646</ValueColor>
+        <OverrideValueColor>True</OverrideValueColor>
+        <ValueLocation>Variables</ValueLocation>
+        <ValueSource>Damage_Rounded</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
         <BackgroundColor2>00FFFFFF</BackgroundColor2>
         <BackgroundGradient>Plain</BackgroundGradient>
@@ -221,23 +238,6 @@
       </Settings>
     </Component>
     <Component>
-      <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
-      <Settings>
-        <Version>1.0</Version>
-        <TextLabel>Damage</TextLabel>
-        <TextColor>FFFFFFFF</TextColor>
-        <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFAF4646</ValueColor>
-        <OverrideValueColor>True</OverrideValueColor>
-        <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>damage</ValueSource>
-        <BackgroundColor>00FFFFFF</BackgroundColor>
-        <BackgroundColor2>00FFFFFF</BackgroundColor2>
-        <BackgroundGradient>Plain</BackgroundGradient>
-        <Display2Rows>False</Display2Rows>
-      </Settings>
-    </Component>
-    <Component>
       <Path>LiveSplit.BlankSpace.dll</Path>
       <Settings>
         <Version>1.7</Version>
@@ -252,81 +252,13 @@
       <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
       <Settings>
         <Version>1.0</Version>
-        <TextLabel>Split Worm HP</TextLabel>
+        <TextLabel>Boss HP</TextLabel>
         <TextColor>FFFFFFFF</TextColor>
         <OverrideTextColor>False</OverrideTextColor>
         <ValueColor>FF9F71FC</ValueColor>
         <OverrideValueColor>True</OverrideValueColor>
-        <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>Worm_HP</ValueSource>
-        <BackgroundColor>00FFFFFF</BackgroundColor>
-        <BackgroundColor2>00FFFFFF</BackgroundColor2>
-        <BackgroundGradient>Plain</BackgroundGradient>
-        <Display2Rows>False</Display2Rows>
-      </Settings>
-    </Component>
-    <Component>
-      <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
-      <Settings>
-        <Version>1.0</Version>
-        <TextLabel>Missionary HP</TextLabel>
-        <TextColor>FFFFFFFF</TextColor>
-        <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFCFA850</ValueColor>
-        <OverrideValueColor>True</OverrideValueColor>
-        <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>Missionary_HP</ValueSource>
-        <BackgroundColor>00FFFFFF</BackgroundColor>
-        <BackgroundColor2>00FFFFFF</BackgroundColor2>
-        <BackgroundGradient>Plain</BackgroundGradient>
-        <Display2Rows>False</Display2Rows>
-      </Settings>
-    </Component>
-    <Component>
-      <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
-      <Settings>
-        <Version>1.0</Version>
-        <TextLabel>Lenny HP</TextLabel>
-        <TextColor>FFFFFFFF</TextColor>
-        <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFE37D7D</ValueColor>
-        <OverrideValueColor>True</OverrideValueColor>
-        <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>Lenny_HP</ValueSource>
-        <BackgroundColor>00FFFFFF</BackgroundColor>
-        <BackgroundColor2>00FFFFFF</BackgroundColor2>
-        <BackgroundGradient>Plain</BackgroundGradient>
-        <Display2Rows>False</Display2Rows>
-      </Settings>
-    </Component>
-    <Component>
-      <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
-      <Settings>
-        <Version>1.0</Version>
-        <TextLabel>Alessa HP</TextLabel>
-        <TextColor>FFFFFFFF</TextColor>
-        <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FFFA2CFF</ValueColor>
-        <OverrideValueColor>True</OverrideValueColor>
-        <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>Alessa_HP</ValueSource>
-        <BackgroundColor>00FFFFFF</BackgroundColor>
-        <BackgroundColor2>00FFFFFF</BackgroundColor2>
-        <BackgroundGradient>Plain</BackgroundGradient>
-        <Display2Rows>False</Display2Rows>
-      </Settings>
-    </Component>
-    <Component>
-      <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
-      <Settings>
-        <Version>1.0</Version>
-        <TextLabel>God HP</TextLabel>
-        <TextColor>FFFFFFFF</TextColor>
-        <OverrideTextColor>True</OverrideTextColor>
-        <ValueColor>FFFFFFFF</ValueColor>
-        <OverrideValueColor>False</OverrideValueColor>
-        <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>God_HP</ValueSource>
+        <ValueLocation>Variables</ValueLocation>
+        <ValueSource>Boss_HP</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
         <BackgroundColor2>00FFFFFF</BackgroundColor2>
         <BackgroundGradient>Plain</BackgroundGradient>
