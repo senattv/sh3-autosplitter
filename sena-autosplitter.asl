@@ -39,7 +39,9 @@ init {
   
   refreshRate = 10;
 }
-
+startup {
+  settings.Add("10Stars", true, "10 Stars (ignores rooms M and M5)");
+}
 update {
   if (current.roomID == 45) { // split worm
     vars.Boss_HP = current.Worm_HP_Mem;
@@ -63,7 +65,7 @@ update {
     else vars.Boss_HP = 100;
   }    
   else if (current.roomID == 235) { // god
-    vars.Boss_HP = (current.Alessa_HP_Mem > 0.0) ? Math.Round(current.Alessa_HP_Mem, 2) : 0.0;
+    vars.Boss_HP = current.Alessa_HP_Mem;
   }    
   else if (current.roomID == 266) { // god
     if (current.God_HP_Mem_One != 0.0 && current.God_HP_Mem_One < 100.0)
@@ -105,7 +107,14 @@ split {
     !(old.roomID == 155 && current.roomID == 156) && // Douglas's car to motel room
     !(old.roomID == 159 && current.roomID == 156) && // Hospital to Claudia+Vincent cutscene
     !(old.roomID == 157 && current.roomID == 156) && // Heather and Vincent cutscene at the motel
-    !(old.roomID == 227 && current.roomID == 216) // Douglas talking to Claudia to haunted mansion
+    !(old.roomID == 227 && current.roomID == 216) && // Douglas talking to Claudia to haunted mansion
+    
+    // 10 star ranking-specific skips of rooms M5 and M
+    (!settings["10Stars"] || (
+      (old.roomID != 171 && current.roomID != 171) && // not entering or exit M5
+      (current.roomID != 186) &&
+	  (old.roomID != 186 || current.roomID != 168) // not going back from M room to M hallway
+    ))	 
   );
 }
 

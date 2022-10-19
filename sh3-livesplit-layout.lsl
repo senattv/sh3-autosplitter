@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout version="1.6.1">
   <Mode>Vertical</Mode>
-  <X>1424</X>
-  <Y>82</Y>
-  <VerticalWidth>373</VerticalWidth>
-  <VerticalHeight>755</VerticalHeight>
+  <X>1559</X>
+  <Y>19</Y>
+  <VerticalWidth>351</VerticalWidth>
+  <VerticalHeight>882</VerticalHeight>
   <HorizontalWidth>-1</HorizontalWidth>
   <HorizontalHeight>-1</HorizontalHeight>
   <Settings>
@@ -104,8 +104,15 @@
         <Columns>
           <Settings>
             <Version>1.5</Version>
-            <Name>PB</Name>
+            <Name>Delta</Name>
             <Type>DeltaorSplitTime</Type>
+            <Comparison>Current Comparison</Comparison>
+            <TimingMethod>Current Timing Method</TimingMethod>
+          </Settings>
+          <Settings>
+            <Version>1.5</Version>
+            <Name>Time</Name>
+            <Type>SegmentTime</Type>
             <Comparison>Current Comparison</Comparison>
             <TimingMethod>Current Timing Method</TimingMethod>
           </Settings>
@@ -138,24 +145,9 @@
         <Start>True</Start>
         <Reset>True</Reset>
         <Split>True</Split>
-        <CustomSettings />
-      </Settings>
-    </Component>
-    <Component>
-      <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
-      <Settings>
-        <Version>1.0</Version>
-        <TextLabel>Heather HP</TextLabel>
-        <TextColor>FF4FF88B</TextColor>
-        <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FF4FF88B</ValueColor>
-        <OverrideValueColor>True</OverrideValueColor>
-        <ValueLocation>CurrentState</ValueLocation>
-        <ValueSource>Heather_HP</ValueSource>
-        <BackgroundColor>00FFFFFF</BackgroundColor>
-        <BackgroundColor2>00FFFFFF</BackgroundColor2>
-        <BackgroundGradient>Plain</BackgroundGradient>
-        <Display2Rows>False</Display2Rows>
+        <CustomSettings>
+          <Setting id="10Stars" type="bool">True</Setting>
+        </CustomSettings>
       </Settings>
     </Component>
     <Component>
@@ -252,13 +244,13 @@
       <Path>LiveSplit.ASLVarViewer.UI.dll</Path>
       <Settings>
         <Version>1.0</Version>
-        <TextLabel>Boss HP</TextLabel>
+        <TextLabel>Room:</TextLabel>
         <TextColor>FFFFFFFF</TextColor>
-        <OverrideTextColor>False</OverrideTextColor>
-        <ValueColor>FF9F71FC</ValueColor>
-        <OverrideValueColor>True</OverrideValueColor>
-        <ValueLocation>Variables</ValueLocation>
-        <ValueSource>Boss_HP</ValueSource>
+        <OverrideTextColor>True</OverrideTextColor>
+        <ValueColor>FFFFFFFF</ValueColor>
+        <OverrideValueColor>False</OverrideValueColor>
+        <ValueLocation>CurrentState</ValueLocation>
+        <ValueSource>roomID</ValueSource>
         <BackgroundColor>00FFFFFF</BackgroundColor>
         <BackgroundColor2>00FFFFFF</BackgroundColor2>
         <BackgroundGradient>Plain</BackgroundGradient>
